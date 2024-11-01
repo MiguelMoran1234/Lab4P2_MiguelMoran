@@ -12,6 +12,7 @@ public class Lab4P2_MiguelMoran {
     static Scanner sc = new Scanner(System.in);
     
     public static void main(String[] args) {
+        Administrador administrador = new Administrador("admin");
         boolean seguir = true;
         while(seguir){
             System.out.print("Ingrese usuario: ");
