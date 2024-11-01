@@ -16,7 +16,7 @@ public class Electronico extends Producto{
     }
 
     @Override
-    public double PrecioTotal(double precio) {
+    public double getPrecioTotal(double precio) {
         return precio*impuesto;
     }
 

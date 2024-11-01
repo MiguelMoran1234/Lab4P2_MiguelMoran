@@ -120,7 +120,7 @@ public class Administrador extends Usuario {
         comida.getProductos().add(comida);
     }
 
-    public void ListarProductos() {
+    public static void ListarProductos() {
         Electronico electronico = new Electronico(0, "", "", 0);
         for (int i = 0; i < electronico.getProductos().size(); i++) {
             if (electronico.getProductos().get(i) instanceof Electronico) {

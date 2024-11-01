@@ -35,6 +35,6 @@ public abstract class Producto {
         return productos;
     }
     
-    public abstract double PrecioTotal(double precio);
+    public abstract double getPrecioTotal(double precio);
     
 }
