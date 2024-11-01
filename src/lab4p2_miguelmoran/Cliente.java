@@ -9,6 +9,8 @@ import java.util.ArrayList;
 
 public class Cliente extends Usuario{
 
+    Scanner sc = new Scanner(System.in);
+    
     public Cliente(String usuario) {
         super(usuario);
     }
@@ -19,6 +21,8 @@ public class Cliente extends Usuario{
         while(seguir){
             System.out.println("1. Realizar Compra");
             System.out.println("2. Historial de Compras");
+            System.out.print("Ingrese una opcion: ");
+            int opcion = sc.nextInt();
         }
     }
     

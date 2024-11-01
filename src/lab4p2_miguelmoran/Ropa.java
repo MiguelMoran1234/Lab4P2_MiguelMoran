@@ -4,10 +4,16 @@
  */
 package lab4p2_miguelmoran;
 
-/**
- *
- * @author flash
- */
+
 public class Ropa extends Producto{
+    
+    private char talla;
+    private final double impuesto = 1.15;
+
+    public Ropa(char talla, String nombre, String proveedor, String precio) {
+        super(nombre, proveedor, precio);
+        this.talla = talla;
+    }
+    
     
 }

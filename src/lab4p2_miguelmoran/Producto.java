@@ -4,10 +4,16 @@
  */
 package lab4p2_miguelmoran;
 
-/**
- *
- * @author flash
- */
 public abstract class Producto {
+    
+    private String nombre;
+    private String proveedor;
+    private String precio;
+
+    public Producto(String nombre, String proveedor, String precio) {
+        this.nombre = nombre;
+        this.proveedor = proveedor;
+        this.precio = precio;
+    }
     
 }

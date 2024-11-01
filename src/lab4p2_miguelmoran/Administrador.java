@@ -22,17 +22,20 @@ public class Administrador extends Usuario {
             System.out.println("2. Ver Productos");
             System.out.println("3. Registrar Cliente");
             System.out.println("4. Ver Clientes");
+            System.out.print("Ingrese una opcion: ");
             int opcion = sc.nextInt();
             switch (opcion) {
                 case 1 -> {
                     System.out.println("1. Agregar Electronico");
                     System.out.println("2. Agregar Ropa");
                     System.out.println("3. Agregar Comida");
+                    System.out.print("Ingrese una opcion: ");
                     opcion = sc.nextInt();
                 }
                 case 2 -> {
                     System.out.println("1. Listar Todos");
                     System.out.println("2. Listar por tipo");
+                    System.out.print("Ingrese una opcion: ");
                     opcion = sc.nextInt();
                 }
                 case 3 -> {

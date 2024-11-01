@@ -4,10 +4,17 @@
  */
 package lab4p2_miguelmoran;
 
-/**
- *
- * @author flash
- */
+
 public class Electronicos extends Producto{
+    
+    private int garantia;
+    private final double impuesto = 1.1;
+
+    public Electronicos(int garantia, String nombre, String proveedor, String precio) {
+        super(nombre, proveedor, precio);
+        this.garantia = garantia;
+    }
+    
+    
     
 }

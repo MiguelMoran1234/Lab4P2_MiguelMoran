@@ -4,10 +4,9 @@
  */
 package lab4p2_miguelmoran;
 
-/**
- *
- * @author flash
- */
 public class Comida extends Producto{
+    
+    private String fecha;
+    private final double impuesto = 1.05;
     
 }
