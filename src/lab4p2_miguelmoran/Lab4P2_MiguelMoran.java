@@ -13,6 +13,7 @@ public class Lab4P2_MiguelMoran {
     
     public static void main(String[] args) {
         Administrador administrador = new Administrador("admin");
+        administrador.getUsuarios().add(administrador);
         boolean seguir = true;
         while(seguir){
             System.out.print("Ingrese usuario: ");

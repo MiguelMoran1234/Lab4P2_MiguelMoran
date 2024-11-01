@@ -19,6 +19,11 @@ public class Electronico extends Producto{
     public double PrecioTotal(double precio) {
         return precio*impuesto;
     }
+
+    @Override
+    public String toString() {
+        return "nombre: " + nombre + " | proveedor: " + proveedor +  " | precio: " + precio + " | garantia:" + garantia + " | impuesto: " + impuesto;
+    }
     
     
     

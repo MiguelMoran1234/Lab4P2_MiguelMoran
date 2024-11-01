@@ -19,6 +19,9 @@ public class Comida extends Producto{
         return precio*impuesto;
     }
     
-    
+    @Override
+    public String toString() {
+        return "nombre: " + nombre + " | proveedor: " + proveedor +  " | precio: " + precio + " | fecha:" + fecha + " | impuesto: " + impuesto;
+    }
     
 }

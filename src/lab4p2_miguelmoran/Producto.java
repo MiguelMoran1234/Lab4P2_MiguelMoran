@@ -8,15 +8,27 @@ import java.util.ArrayList;
 
 public abstract class Producto {
     
-    private String nombre;
-    private String proveedor;
-    private double precio;
+    protected String nombre;
+    protected String proveedor;
+    protected double precio;
     ArrayList<Producto> productos = new ArrayList<>();
     
     public Producto(String nombre, String proveedor, double precio) {
         this.nombre = nombre;
         this.proveedor = proveedor;
         this.precio = precio;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getProveedor() {
+        return proveedor;
+    }
+
+    public double getPrecio() {
+        return precio;
     }
 
     public ArrayList<Producto> getProductos() {

@@ -31,7 +31,7 @@ public class Administrador extends Usuario {
                     System.out.println("3. Agregar Comida");
                     System.out.print("Ingrese una opcion: ");
                     opcion = sc.nextInt();
-                    switch(opcion){
+                    switch (opcion) {
                         case 1 -> {
                             AgregarElectronico();
                         }
@@ -63,8 +63,8 @@ public class Administrador extends Usuario {
             }
         }
     }
-    
-    public void AgregarElectronico(){
+
+    public void AgregarElectronico() {
         System.out.print("Ingrese nombre: ");
         String nombre = sc.next();
         System.out.print("Ingrese proveedor: ");
@@ -76,9 +76,8 @@ public class Administrador extends Usuario {
         Electronico electronico = new Electronico(garantia, nombre, proveedor, precio);
         electronico.getProductos().add(electronico);
     }
-    
-    
-    public void AgregarRopa(){
+
+    public void AgregarRopa() {
         System.out.print("Ingrese nombre: ");
         String nombre = sc.next();
         System.out.print("Ingrese proveedor: ");
@@ -90,8 +89,8 @@ public class Administrador extends Usuario {
         Ropa ropa = new Ropa(talla, nombre, proveedor, precio);
         ropa.getProductos().add(ropa);
     }
-    
-    public void AgregarComida(){
+
+    public void AgregarComida() {
         System.out.print("Ingrese nombre: ");
         String nombre = sc.next();
         System.out.print("Ingrese proveedor: ");
@@ -103,10 +102,38 @@ public class Administrador extends Usuario {
         Comida comida = new Comida(fecha, nombre, proveedor, precio);
         comida.getProductos().add(comida);
     }
-    
-    public void ListarProductos(){
-        for (int i = 0; i < ; i++) {
-            
+
+    public void ListarProductos() {
+        Electronico electronico = new Electronico(0, "", "", 0);
+        for (int i = 0; i < electronico.getProductos().size(); i++) {
+            if (electronico.getProductos().get(i) instanceof Electronico) {
+                System.out.println((i + 1) + ". " + electronico.getProductos().get(i).toString());
+            }
+            if (electronico.getProductos().get(i) instanceof Ropa) {
+                System.out.println((i + 1) + ". " + electronico.getProductos().get(i).toString());
+            }
+            if (electronico.getProductos().get(i) instanceof Comida) {
+                System.out.println((i + 1) + ". " + electronico.getProductos().get(i).toString());
+            }
         }
+    }
+    
+    public void ListarporTipos() {
+        Electronico electronico = new Electronico(0, "", "", 0);
+        for (int i = 0; i < electronico.getProductos().size(); i++) {
+            if (electronico.getProductos().get(i) instanceof Electronico) {
+                System.out.println(electronico.getProductos().get(i).toString());
+            }
+        }
+        for (int i = 0; i < electronico.getProductos().size(); i++) {
+            if (electronico.getProductos().get(i) instanceof Ropa) {
+                System.out.println(electronico.getProductos().get(i).toString());
+            }
+        }
+        for (int i = 0; i < electronico.getProductos().size(); i++) {
+            if (electronico.getProductos().get(i) instanceof Comida) {
+                System.out.println(electronico.getProductos().get(i).toString());
+            }
+        }   
     }
 }

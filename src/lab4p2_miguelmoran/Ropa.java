@@ -20,5 +20,9 @@ public class Ropa extends Producto{
         return precio*impuesto;
     }
     
+    @Override
+    public String toString() {
+        return "nombre: " + nombre + " | proveedor: " + proveedor +  " | precio: " + precio + " | talla:" + talla + " | impuesto: " + impuesto;
+    }
     
 }
