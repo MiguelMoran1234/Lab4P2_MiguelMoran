@@ -4,17 +4,19 @@
  */
 package lab4p2_miguelmoran;
 
-/**
- *
- * @author flash
- */
+import java.util.Scanner;
+import java.util.ArrayList;
+
 public class Lab4P2_MiguelMoran {
 
-    /**
-     * @param args the command line arguments
-     */
+    static Scanner sc = new Scanner(System.in);
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+        boolean seguir = true;
+        while(seguir){
+            System.out.print("Ingrese usuario: ");
+            String usuario = sc.next();
+        }
     }
     
 }

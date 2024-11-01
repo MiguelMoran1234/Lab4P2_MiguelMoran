@@ -4,10 +4,23 @@
  */
 package lab4p2_miguelmoran;
 
-/**
- *
- * @author flash
- */
-public class Cliente {
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class Cliente extends Usuario{
+
+    public Cliente(String usuario) {
+        super(usuario);
+    }
+
+    @Override
+    public void Menu() {
+        boolean seguir = true;
+        while(seguir){
+            System.out.println("1. Realizar Compra");
+            System.out.println("2. Historial de Compras");
+        }
+    }
+    
     
 }

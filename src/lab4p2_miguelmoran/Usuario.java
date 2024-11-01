@@ -4,10 +4,13 @@
  */
 package lab4p2_miguelmoran;
 
-/**
- *
- * @author flash
- */
+
 public abstract class Usuario {
+    String usuario;
+
+    public Usuario(String usuario) {
+        this.usuario = usuario;
+    }
     
+    public abstract void Menu();
 }

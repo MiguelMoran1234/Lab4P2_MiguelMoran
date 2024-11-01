@@ -8,6 +8,6 @@ package lab4p2_miguelmoran;
  *
  * @author flash
  */
-public class Ropa {
+public class Ropa extends Producto{
     
 }
