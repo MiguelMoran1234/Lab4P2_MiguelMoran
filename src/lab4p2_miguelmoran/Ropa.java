@@ -7,12 +7,17 @@ package lab4p2_miguelmoran;
 
 public class Ropa extends Producto{
     
-    private char talla;
+    private String talla;
     private final double impuesto = 1.15;
 
-    public Ropa(char talla, String nombre, String proveedor, String precio) {
+    public Ropa(String talla, String nombre, String proveedor, double precio) {
         super(nombre, proveedor, precio);
         this.talla = talla;
+    }
+
+    @Override
+    public double PrecioTotal(double precio) {
+        return precio*impuesto;
     }
     
     

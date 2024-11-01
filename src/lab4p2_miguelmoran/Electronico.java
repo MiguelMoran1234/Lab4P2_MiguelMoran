@@ -5,14 +5,19 @@
 package lab4p2_miguelmoran;
 
 
-public class Electronicos extends Producto{
+public class Electronico extends Producto{
     
     private int garantia;
     private final double impuesto = 1.1;
 
-    public Electronicos(int garantia, String nombre, String proveedor, String precio) {
+    public Electronico(int garantia, String nombre, String proveedor, double precio) {
         super(nombre, proveedor, precio);
         this.garantia = garantia;
+    }
+
+    @Override
+    public double PrecioTotal(double precio) {
+        return precio*impuesto;
     }
     
     
