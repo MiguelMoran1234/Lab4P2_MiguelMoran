@@ -23,6 +23,17 @@ public class Cliente extends Usuario{
             System.out.println("2. Historial de Compras");
             System.out.print("Ingrese una opcion: ");
             int opcion = sc.nextInt();
+            switch(opcion){
+                case 1 -> {
+                    
+                }
+                case 2 -> {
+                    
+                }
+                default -> {
+                    System.out.println("Elija una opcion valida");
+                }
+            }
         }
     }
     

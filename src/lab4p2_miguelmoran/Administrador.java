@@ -41,6 +41,9 @@ public class Administrador extends Usuario {
                         case 3 -> {
                             AgregarComida();
                         }
+                        default -> {
+                            System.out.println("Elija una opcion valida");
+                        }
                     }
                 }
                 case 2 -> {
@@ -48,6 +51,17 @@ public class Administrador extends Usuario {
                     System.out.println("2. Listar por tipo");
                     System.out.print("Ingrese una opcion: ");
                     opcion = sc.nextInt();
+                    switch (opcion) {
+                        case 1 -> {
+                            ListarProductos();
+                        }
+                        case 2 -> {
+                            ListarporTipo();
+                        }
+                        default -> {
+                            System.out.println("Elija una opcion valida");
+                        }
+                    }
                 }
                 case 3 -> {
                     System.out.print("Ingrese nombre de usuario del nuevo cliente: ");
@@ -59,6 +73,9 @@ public class Administrador extends Usuario {
                     for (int i = 0; i < usuarios.size(); i++) {
                         System.out.println((i + 1) + ". " + usuarios.get(i).toString());
                     }
+                }
+                default -> {
+                    System.out.println("Elija una opcion valida");
                 }
             }
         }
@@ -117,8 +134,8 @@ public class Administrador extends Usuario {
             }
         }
     }
-    
-    public void ListarporTipos() {
+
+    public void ListarporTipo() {
         Electronico electronico = new Electronico(0, "", "", 0);
         for (int i = 0; i < electronico.getProductos().size(); i++) {
             if (electronico.getProductos().get(i) instanceof Electronico) {
@@ -134,6 +151,6 @@ public class Administrador extends Usuario {
             if (electronico.getProductos().get(i) instanceof Comida) {
                 System.out.println(electronico.getProductos().get(i).toString());
             }
-        }   
+        }
     }
 }

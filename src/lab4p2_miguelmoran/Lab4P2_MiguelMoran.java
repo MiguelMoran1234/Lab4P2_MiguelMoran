@@ -10,15 +10,21 @@ import java.util.ArrayList;
 public class Lab4P2_MiguelMoran {
 
     static Scanner sc = new Scanner(System.in);
-    
+
     public static void main(String[] args) {
         Administrador administrador = new Administrador("admin");
         administrador.getUsuarios().add(administrador);
         boolean seguir = true;
-        while(seguir){
+        while (seguir) {
             System.out.print("Ingrese usuario: ");
             String usuario = sc.next();
+            for (int i = 0; i < administrador.getUsuarios().size(); i++) {
+                if (administrador.getUsuarios().get(i).getUsuario().equals(usuario)) {
+                    administrador.getUsuarios().get(i).Menu();
+                    break;
+                }
+            }
         }
     }
-    
+
 }
